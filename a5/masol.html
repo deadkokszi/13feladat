@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <textarea id="eredeti" cols="30" row="10"></textarea>
+        <input type="button" value="Masol" onclick="masol()">
+
+
+        <textarea id="masolat" cols="30" row="10"></textarea>
+        <input type="button" value="Torol" onclick="torol()">
+    </form>
+
+    <script>
+        function masol(){
+            console.log("Másolás következik")
+            let szoveg=document.getElementById("eredeti").value
+            console.log(szoveg)
+            document.getElementById("masolat").value=szoveg
+       }
+       function torol(){
+            document.getElementById("masolat").value=""
+  
+
+       }
+    </script>
+
+
+</body>
+</html>
