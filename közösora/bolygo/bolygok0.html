@@ -4,98 +4,125 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
   <title>Bolygók</title>
 </head>
+
+<style>
+      .feher{
+        color:white;
+      }
+      body{
+        background-color:dimgray;
+      }
+      .kep{
+        width: 100%;
+        height: 75%;
+      }
+      .keret{
+        border: 1px solid wheat;
+      }
+      hr{
+        background-color: white;
+      }
+      h3{
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+      }
+      .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+</style>
+
 <body>
-
-  <style>
-    .container{
-      border: 2px solid white;
-    }
-    .col-md-3{
-      border: 2px white
-    }
-    body{
-      background-color: gray;
-    }
-    h3{
-      color: white;
-    }
-    h1{
-      text-align: center;
-      color: white;
-    }
-  </style>
-
-
-
- 
-  <h1>A Naprendszer bolygói</h1>
-
-
   <div class="container">
-    
+    <h1 class="feher">A Naprendszer bolygói</h1>
     <div class="row">
-      <div class="col-md-3">
-        <img onclick="show(this)"  src="merkur.jpg" alt="" class="img-thumbnail h-75">
+      
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="merkur.jpg" data-toggle="modal" data-target="#exampleModal" >
         <hr>
         <h3>Merkúr</h3> 
       </div>
 
-      <div class="col-md-3">
-        <img onclick="show(this)" src="venusz.jpg"  alt=""class="img-thumbnail h-75">
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="venusz.jpg" data-toggle="modal" data-target="#exampleModal" >
         <hr>
         <h3>Vénusz</h3>
       </div>
 
-      <div class="col-md-3">
-        <img onclick="show(this)"  src="fold.jpg" alt="" class="img-thumbnail h-75">
-        <hr>
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="fold.jpg"data-toggle="modal" data-target="#exampleModal"> 
+            <hr>
         <h3>Föld</h3>
       </div>
 
-      <div class="col-md-3">
-        <img onclick="show(this)"  src="mars.jpg" alt="" class="img-thumbnail h-75">
+      <div class="col-md-3 col-sm-6  border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="mars.jpg"  data-toggle="modal" data-target="#exampleModal">
         <hr>
         <h3>Mars</h3>
      </div>
+
     </div>
     <div class="row">
-      <div class="col-md-3">
-        <img onclick="show(this)" src="jupiter.jpg" alt="" class="img-thumbnail h-75">
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="jupiter.jpg" data-toggle="modal" data-target="#exampleModal" >
         <hr>
         <h3>Jupiter</h3>
       </div>
 
-      <div class="col-md-3">
-        <img onclick="show(this)" src="saturn.jpg" alt="" class="img-thumbnail h-75">
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="saturn.jpg" data-toggle="modal" data-target="#exampleModal" >
         <hr>
         <h3>Szaturnusz</h3>
       </div>
 
-      <div class="col-md-3">
-        <img onclick="show(this)" src="uranus.jpg" alt="" class="img-thumbnail h-75">
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="uranus.jpg" data-toggle="modal" data-target="#exampleModal" >
         <hr>
         <h3>Uránusz</h3>
       </div>
 
-      <div class="col-md-3">
-        <img onclick="show(this)" src="neptun.jpg" alt=""  class="img-thumbnail h-75">
+      <div class="col-md-3 col-sm-6 border">
+        <img onclick="mutat(this)" class="img-fluid kep" src="neptun.jpg" data-toggle="modal" data-target="#exampleModal" >
         <hr>
         <h3>Neptunusz</h3>
       </div>
-  </div>
-</div>
+    </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">xD</h5>
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              //<span aria-hidden="true">&times;</span>
+           </button>-->
+          </div>
+          <img src="" class="modal-body">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezár</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script>
-  function show(obj){
-    console.log(obj.src)
-    window.open(obj.src, '_blank');
-  }
-</script>
+    <script>
+      function mutat(obj){
+        console.log(obj.src)
+        document.querySelector(".modal-body").src = obj.src
+      }
+    </script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
 </htm

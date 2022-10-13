@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>szamologep</title>
+
+</head>
+
+<style>
+
+    .div{
+        width: 400px;
+        height: 300px;
+        border: solid 3px lightblue;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .gomb{
+        background-color: rgb(11, 97, 166);
+    }
+
+
+</style>
+<body>
+    <div class="div">
+        <h1>Egyszerű Számológép</h1>
+        <input type="number" name="beker" id="beker" class="bemezo">
+        <p></p>
+        <input type="number" name="beker" id="beker2" class="bemezo">
+        <p><div class="eredmeny">Megoldás
+        </div></p>
+        <button id="ossze" class="gomb" onclick="ossze()">+</button>
+        <button id="kivon" class="gomb" onclick="kivon()">-</button>
+        <button id="oszt" class="gomb" onclick="oszt()">/</button>
+        <button id="szoroz" class="gomb" onclick="szoroz()">*</button>
+
+    </div>
+
+
+    <script>
+        let elsoszam;
+        let masodikszam;
+        let osszeadas;
+        let kivonas;
+        let osztas;
+        let szorzas;
+        function ossze(){
+            elsoszam = document.getElementById('beker').value
+            masodikszam = document.getElementById('beker2').value
+            osszeadas = Number(elsoszam)+Number(masodikszam);
+            document.querySelector('.eredmeny').innerHTML= osszeadas
+        }
+        function kivon(){
+            elsoszam = document.getElementById('beker').value
+            masodikszam = document.getElementById('beker2').value
+            kivonas = elsoszam-masodikszam;
+            document.querySelector('.eredmeny').innerHTML= kivonas
+        }
+        function oszt(){
+            elsoszam = document.getElementById('beker').value
+            masodikszam = document.getElementById('beker2').value
+            osztas = elsoszam/masodikszam;
+            document.querySelector('.eredmeny').innerHTML= osztas
+        }
+        function szoroz(){
+            elsoszam = document.getElementById('beker').value
+            masodikszam = document.getElementById('beker2').value
+            szorzas = elsoszam*masodikszam;
+            document.querySelector('.eredmeny').innerHTML= szorzas
+        }
+
+
+    </script>
+</body>
+</html>
