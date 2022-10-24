@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Üzenet küldés</title>
+
+
+    <style>
+textarea {
+        margin-right: 30px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sd-6">
+                <label for="">Üzenet: </label>
+                <p></p>
+                <textarea name="" id="uzen" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col-sd-6">
+                <label for="">Név: </label>
+                <p></p>
+                <input type="text" name="" id="nev">
+                <p></p>
+                <label for="">Email: </label>
+                <p></p>
+                <input type="email" name="" id="e">
+                <p></p>
+                <input type="button" name="" id="" value="Küldés" onclick="kuld">
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+<script>
+    let person={}
+    function kuld() {
+        console.log(obj)
+
+        let nev=document.getElementById("nev").value
+        if(nev.lenght>2)
+        person.nev=nev
+        else
+        document.querySelector(".smg").innerHTML="Adjon meg igazi nevet!"
+
+    }
+</script>
+
+
+</body>
+</html>
