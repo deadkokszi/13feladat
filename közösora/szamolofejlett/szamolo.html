@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+        <h1>Egyszerű Számológép</h1>
+        <input type="number" name="beker" id="beker" class="bemezo">
+
+        <p></p>
+        <div class="col-sd-2">
+            <select name="" id="s1">
+                <option >+</option>
+                <option >-</option>
+                <option >*</option>
+                <option >/</option>
+            </select>
+        </div>
+        <p></p>
+        <input type="number" name="beker" id="beker2" class="bemezo">
+
+        <p><div class="eredmeny">
+        </div></p>
+        <button id="osszeg" class="gomb" onclick="osszeg()">Megoldás</button>
+        
+        
+        
+
+    </div>
+    <script>
+        let elsoszam;
+        let masodikszam;
+        let eredmeny;
+        function osszeg(){
+            let muvelete = document.getElementById('s1').value
+            elsoszam =+ document.getElementById('beker').value
+            masodikszam =+ document.getElementById('beker2').value
+            if(muvelete == "+"){
+            eredmeny = elsoszam+masodikszam;
+            }
+            else if(muvelete == "-"){
+            eredmeny = elsoszam - masodikszam;
+            }
+            else if(muvelete == "*"){
+            eredmeny = elsoszam * masodikszam;
+            }
+            else{
+                eredmeny = elsoszam / masodikszam;
+            }
+            document.querySelector('.eredmeny').innerHTML = eredmeny
+        }
+    </script>
+</body>
+</html>
