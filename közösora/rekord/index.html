@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rest Api szoftverarhitektúra</h1>
+    <p>Tanulók listája:</p>
+    <ul></ul>
+
+
+    <script>
+        async function getdata(){
+            const respone = await fetch('../szerver/read.php')
+            const data = await respontse.jhon()
+            render(data)
+        }
+        function renderLI(data){
+            console.log(data)
+            let LiStr=""
+            for(let obj of data){
+                liStr+='<li>${obj.nev}</li>'
+                document.querySelector('ul').innerHTML=LiStr
+            }
+
+        }
+        getdata('../szerver/read.php', renderLI)
+        function renderOőtions(data){
+            let optStr=""
+            for(let obj of data)
+            optStr+='<option value="${obj.id}"</option>'
+                document,querySelector('select').innerHTML+=optStr
+        }
+
+        getdata('../szerver/read.php',renderOőtions)
+
+
+    </script>
+</body>
+</html>
