@@ -1,0 +1,67 @@
+body {
+  background-image: url("TypeScriptBack.jpg");
+  background-size: cover;
+}
+
+p {
+  margin: 5px;
+  text-indent: 20px;
+}
+
+#content {
+  margin-bottom: 30px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  width: 80%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: black;
+}
+
+#picture {
+  float: right;
+  height: 257px;
+}
+
+h1 {
+  font-variant: small-caps;
+  font-style: italic;
+}
+
+li {
+  margin-left: 15px;
+  list-style-type: square;
+}
+
+table {
+  
+  width: 80%;
+  margin: auto;
+  border: 1px solid gray;
+  text-align: center;
+  margin:  5px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.kozep{
+  text-align: center;
+}
+td{
+  border: 1px solid gray;
+  text-align: center;
+
+}
+.szin{
+  background-color: blue;
+  color: white;
+}
+
+.kek{
+  color: blue;
+}

@@ -1,0 +1,93 @@
+﻿<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div id="tartalom" class="container-fluid my-5">
+		
+
+	<h1>
+		Szolgáltatásorientált architektúra (SOA)
+	</h1>
+	<div class="row col-md-12">
+	<div class="col-md-6">
+		<p>A szolgáltatásorientált architektúra (angolul Service-Oriented Architecture, röviden <span class="sad">SOA</span>) egy programozási módszer, aminek lényege, hogy az egyes szolgáltatások egy hálózatban helyezkednek el, és egy protokoll által meghatározott módon kommunikálnak. Alapvető elvei függetlenek gyártóktól, termékektől, terjesztőktől és technológiáktól. A szolgáltatások különálló egységek, amik távolról is elérhetők, egymástól függetlenül elérhetők, használhatók, frissíthetők, újra kombinálhatók a folyamatok folytonos változásának, megújulásának megfelelően.
+		</p>
+		<p>Egy szolgáltatásnak a következőket kell teljesítenie:</p>
+
+	<ul>
+		<li>Logikailag reprezentál egy üzleti aktivitást előre meghatározott kimenettel.</li>
+		<li>Önálló, független egység (self-contained).</li>
+		<li>Feketedoboz a kliensei számára.</li>
+		<li>Tartalmazhat több részszolgáltatást.</li> 
+	</ul>	
+		<p>Az 1970-es években a modularitásra megadott definíció szerint különböző szolgáltatások használhatók együtt, hogy egy nagy alkalmazás funkcionalitását nyújtsák. Azonban a szolgáltatásorientált architektúra célja nem az egyes alkalmazások tagolása, és az így létrejövő, részfunkcionalitásokat nyújtó modulok közötti kapcsolat biztosítása, hanem ellenkezőleg: minden szempontból önálló, saját funkcionalitással bíró, és eleve együttműködésre tervezett szolgáltatások összekapcsolásán keresztül megvalósítani az üzleti folyamatokat. A <span class="sad">SOA</span> a vállalat üzleti folyamataira jellemző - valós üzleti tevékenységeket tükröző - szolgáltatások tervezésén alapul, és nem az alkalmazások technológiai célú szétbontásán.</p>
+	</div>
+	<div class="col-md-6">
+		<div id="imageright " class="ha">
+			<img src="SOA_metamodell.png" class=" img-fluid">
+			
+			<p class="kozep"><b><i> Soa metamodell a The Linthicum Group szerint 2007 </i></b></p>
+		
+		</div>
+		
+	</div>
+	</div>
+
+	<div class="row col-md-12">
+		<div class="col-md-6">
+
+		<h2>
+			Legfontosabb szabványok
+		</h2>
+
+		<p>A <span class="sad">SOA</span>-t egy szabványos felszínen, a webszolgáltatás platformon valósítják meg. Ezt a Web szolgáltatás szabványt egyformán támogatja a .NET és a Java. A <span class="sad">SOA</span> által használt szolgáltatásorientált környezet legfontosabb szabványai a következők:</p> 
+
+		<li>SOAP, egy XML (WSDL) alapú kiterjesztett üzenet formátum (boríték).</li>
+		<li>WSDL, webszolgáltatás leíró nyelv.</li>
+		<li>UDDI, általános kereső és integrációs leírásokat tároló eszköz.</li>
+		<li>Üzenetküldés, mint ActiveMQ, JMS, RabbitMQ.</li>
+		<li>RESTful HTTP, a REST saját megkötés alapú architekturális stílusával</li>
+		<li>OPC-UA</li>
+		<li>WCF a Microsofttól</li>
+		<li>Apache Thrift</li>
+		<li>SORCER</li>
+
+		</div>
+		<div class="col-md-6">
+
+		<h2>
+		Minták
+		</h2>
+
+		
+		<table>
+		<tr>
+			<td class="asd">Szolgáltató</td>
+			<td>Létrehozza a webszolgáltatást, és információt közvetít a névszolgáltatónak. Azt is leírja, hogy milyen szolgáltatást nyújt, mi a fontosabb: a könnyű elérhetőség vagy a biztonság, mennyiért lehet igénybe venni, és további információkat is adhat, amik bekerülnek a névszolgáltatóhoz.</td>
+		</tr>
+		<tr>
+			<td class="asd">Névszolgáltató</td>
+			<td>Egy névszolgáltató feladata az, hogy információt nyújtson az elérhető szolgáltatásokról. Megvalósítójuk döntésétől függően lehetnek nyilvánosak vagy privátok, ez utóbbiakat nem mindenki veheti igénybe. Az UDDI egy korai kísérlet volt a webszolgáltatások felderítésére.</td>
+		</tr>
+		<tr>
+			<td class="asd">Szolgáltatásigénylő</td>
+			<td>Az általa igényelt szolgáltatás elérhetőségét névszolgáltatónál keresi, majd a kellő információk birtokában hozzákapcsolódik a szolgáltatóhoz, és meghívja szolgáltatásait. Egy résztvevő lehet egyszer szolgáltató, másszor szolgáltatásigénylő. A szolgáltatók is névszolgáltatónál keresik a számukra fontos adatokat.</td>
+		</tr>
+
+	</table>
+		</div>	
+	</div>
+	</div>
+	<script src="bootstrap-4.4.1-dist/js/jquery.min.js"></script>
+	<script src="bootstrap-4.4.1-dist/js/tether.min.js"></script>
+	<script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<script src="bootstrap-4.4.1-dist/js/jquery.easing.min.js"></script>
+</body>
+
+</html>
