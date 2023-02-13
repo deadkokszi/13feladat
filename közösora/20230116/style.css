@@ -1,0 +1,39 @@
+td {
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.asd{
+    background-color: grey;
+    vertical-align: center;
+}
+body {
+    background-image: url("physics_back.jpg");
+    background-size: cover;
+}
+#tartalom {
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: 30px;
+
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 950px;
+}
+.sad{
+    color: blue;
+    font-weight: bold;
+}
+p {
+    margin: 5px;
+    text-indent: 15px;
+    line-height: 110%;
+    text-align: justify;
+}
+.hely{
+    height: 300px;
+  padding: 0px 5px 5px;
+  overflow: hidden;
+}
+li{
+    list-style-image: url('physics_icon.png');
+}
