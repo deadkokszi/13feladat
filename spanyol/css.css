@@ -1,0 +1,46 @@
+b{
+    color: red;
+}
+h1{
+    text-align: center;
+    font-size: 200px;
+}
+.white{
+    background-color: gray;
+    height: 600px;
+    width: 400px;
+}
+.tb{
+    background-color: rgb(57, 55, 55);
+    height: 300px;
+    width: 50px;
+}
+.alja{
+    background-color: rgb(57, 55, 55);
+    height: 50px;
+    width: 30px;
+}
+.tba{
+
+    background-color: rgb(57, 55, 55);
+    height: 30px;
+    width: 50px;
+}
+
+
+
+.kockaszel{
+    background-color: rgb(18, 58, 179);
+    height: 50px;
+    width: 30px;
+}
+.kocka{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+}
+.kockaszel2{
+    background-color: rgb(18, 58, 179);
+    height: 30px;
+    width: 50px;
+}

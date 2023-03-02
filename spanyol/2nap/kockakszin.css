@@ -1,0 +1,41 @@
+.a{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+
+
+}
+.b{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+
+
+}
+.c{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+
+
+}
+.d{
+    background-color: rgb(49, 114, 183);
+    height: 100px;
+    width: 100px;
+
+
+}
+.e{
+    background-color: rgb(105, 12, 12);
+    height: 100px;
+    width: 100px;
+
+
+}
+.container{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}

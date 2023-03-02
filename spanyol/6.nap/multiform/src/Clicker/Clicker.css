@@ -1,0 +1,6 @@
+.clicker{
+    height: 4em;
+    width: 7em;
+    transition: 0.3sec;
+    cursor: pointer;
+}

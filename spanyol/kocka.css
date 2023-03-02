@@ -1,0 +1,43 @@
+.a{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.b{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+.c{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+.d{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+  
