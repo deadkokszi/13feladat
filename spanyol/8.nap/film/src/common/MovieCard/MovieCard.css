@@ -1,0 +1,23 @@
+
+.movieCardDesign {
+
+    height: 12em;
+    width: 9em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1em;
+
+    background-color: grey;
+
+    margin: 1em;
+}
+
+.posterDesign {
+    
+    height: 6em;
+    width: 4em;
+}

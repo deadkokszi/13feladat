@@ -1,0 +1,31 @@
+
+.searchDesign {
+
+    height: 10vh;
+    width: 86vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputDesign {
+
+    height: 2em;
+    width: 18em;
+    
+    border: 0.4em solid darkcyan;
+    border-radius: 1em;
+}
+
+.showcaseDesign {
+
+    height: 86vh;
+    width: 86vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
